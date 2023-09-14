@@ -1,0 +1,148 @@
+1694670624977	geckodriver	INFO	Listening on 127.0.0.1:60536
+1694670627984	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60537" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\antho\\AppData\\Local\\Temp\\rust_mozprofileBrxmeV"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694670628322	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694670628388	Marionette	INFO	Listening on port 60547
+Read port: 60547
+WebDriver BiDi listening on ws://127.0.0.1:60537
+1694670628436	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60537/devtools/browser/ee007702-d2aa-491b-8d59-503c03dd5fbc
+1694670633733	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c7fc90a340 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 663 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c7ea84cef0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 2085 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c780096010 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 1472 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c7f0681ab0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 7614 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c7fd7d2130 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 6612 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c7ed31e010 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 641 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpPsQPhuNrCvbaydJTyaX7eGKZY1JWLsUtPa-zNjVhE.js line 2 > eval line 6595 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c7807dd9a0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 537 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpPsQPhuNrCvbaydJTyaX7eGKZY1JWLsUtPa-zNjVhE.js line 2 > eval line 814 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c786cb5bc0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 6024 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpPsQPhuNrCvbaydJTyaX7eGKZY1JWLsUtPa-zNjVhE.js line 2 > eval line 6155 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c7831ba790 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 6024 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c7fb4fb020 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 3631 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c7888be460 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 3350 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c78f0bece0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 7803 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c7fbc83560 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 270 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c79dcda230 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 1625 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c790bedcd0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 1762 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c780044570 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 567 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c7f996fab0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 5996 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c7fed4f560 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 7394 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c7f2405ce0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 1248 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c7878baac0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 152 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c7fcb0a460 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 5974 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c7878ba9b0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 657 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c7976b7f00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 3216 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c7fbc2cdf0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 7200 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c79e03cf00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 1384 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c7808919b0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 2793 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c7fbd88bc0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/L_VXeMsvUWvqIVWyYZ0MwBrIHX7eOw577PffvJy4mPo.js line 2 > eval line 5460 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 245: TypeError: this.manager is null
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 218: Error: TelemetryStopwatch: key "FULLSCREEN_CHANGE_MS" was already initialized
+JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Error: TelemetryStopwatch: finishing nonexisting stopwatch. Histogram: "FULLSCREEN_CHANGE_MS", key: ""
+[Child 32744, MediaDecoderStateMachine #1] WARNING: 1c7f3b7e570 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
