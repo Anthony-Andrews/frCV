@@ -1,0 +1,19 @@
+1694748626520	geckodriver	INFO	Listening on 127.0.0.1:55179
+1694748629521	mozrunner::runner	INFO	Running command: "C:\\Users\\antho\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--headless" "--wi ... 0" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\antho\\AppData\\Local\\Temp\\rust_mozprofileetBrjd"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694748629878	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-window-size"
+1694748629943	Marionette	INFO	Listening on port 55188
+WebDriver BiDi listening on ws://127.0.0.1:55180
+Read port: 55188
+1694748630139	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:55180/devtools/browser/f7fc58f5-212c-40c2-bf69-af073c91edab
+1694748634231	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[Child 5396, MediaDecoderStateMachine #1] WARNING: 1f014edc9a0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/vRt-gXLT3vgZrPcGQnA9jtZzsK74Y7iTYyzxha3oej4.js line 2 > eval line 7494 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource:///actors/DOMFullscreenChild.sys.mjs, line 75: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
