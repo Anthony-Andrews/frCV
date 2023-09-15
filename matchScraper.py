@@ -33,8 +33,6 @@ else: print('Starting FRC match scraper...')
 driver = webdriver.Firefox(options = options)
 
 driver.install_addon(f'{dir}\\geckodriver\\ublock_origin-1.52.0.xpi')
-#driver.install_addon(f'{dir}\\geckodriver\\youtube_high_definition-109.0.0.xpi')
-
 
 
 
