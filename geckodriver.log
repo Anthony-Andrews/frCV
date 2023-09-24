@@ -271,3 +271,4 @@ JavaScript error: resource:///actors/DOMFullscreenParent.sys.mjs, line 177: Erro
 [Child 20968, MediaDecoderStateMachine #1] WARNING: 2ca22642ab0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
 [Child 20968, MediaDecoderStateMachine #1] WARNING: 2ca1bdbd680 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
 JavaScript warning: https://www.google.com/js/th/nwcP_aRe3K2iGEG8OSbc8djJ97oB5PWz9GCqv6PbSFg.js line 2 > eval line 7246 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1695549804102	geckodriver	INFO	Listening on 127.0.0.1:54391

@@ -3,7 +3,7 @@
 
 # *with help from ChatGPT (am sleep depreived and doing this instead of hw)
 
-import requests, random, time, os # dependency bullcrap
+import requests, random, time, os, cv2 # dependency bullcrap
 from dotenv import load_dotenv
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
@@ -11,12 +11,18 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
+from cv2 import dnn_superres
+
 
 season = 2023 # specify which FRC season to scrape
 
-matchPerComp = 2 # specify how many matches per competition to retreive
+matchPerComp = 3 # specify how many matches per competition to retreive
 
-headlessMode = False # set to True to run in background silently without browser window (headless mode is kinda buggy and lower resolution so perferably dont do headless)
+headless = True # set to True to run in background silently without browser window (this is currently recommended as otherwise images will be the resolution of your main monitor)
+
+muted = True # mute audio
+
+upscale2x = True # super resoltion 4x upscaling of the images using ESPCN_x4 model
 
 dir = os.path.dirname(os.path.abspath(__file__)) # get path of script.
 
@@ -24,17 +30,53 @@ options = webdriver.FirefoxOptions() # specify options for the automated Firefox
 
 
 # if running in headless mode, mute browser and set to headless mode
-if headlessMode == True:
-    options.add_argument('--headless')
-    options.set_preference('media.volume_scale', '0.0')
-    options.add_argument('--window-size=3840,2160') # set resolution to 4k
-
+if headless == True:
     print('Starting FRC match scraper... (headless mode)') # print status
+    options.add_argument('--headless')
+    options.add_argument('--start-maximized')
+    options.set_preference('media.volume_scale', '0.0')
+    options.add_argument('--width=1920')
+    options.add_argument('--height=1080')
+    os.environ['MOZ_HEADLESS_WIDTH'] = '1920'
+    os.environ['MOZ_HEADLESS_HEIGHT'] = '1080'
+
+elif muted == True:
+    print('Starting FRC match scraper... (muted)')
+    options.set_preference('media.volume_scale', '0.0')
+
 else: print('Starting FRC match scraper...')
 
 driver = webdriver.Firefox(options = options) # specify Firefox geckodriver for scraping.
 
 driver.install_addon(f'{dir}\\geckodriver\\ublock_origin-1.52.0.xpi') # install uBlock Origin extension in Firefox to block ads. https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
+
+
+
+
+
+
+def superRes(imgLocation):
+    # Create an SR object
+    sr = dnn_superres.DnnSuperResImpl_create()
+
+    # Read image
+    image = cv2.imread(imgLocation)
+
+     # Read the desired model
+    path = f'{dir}\\superRes\\ESPCN_x2.pb'
+    sr.readModel(path)
+
+    #sr.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA) # gpu stuff (not needed and not fully supported)
+    #sr.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
+
+    # Set the desired model and scale to get correct pre- and post-processing
+    sr.setModel("espcn", 2) # x2 scale
+
+    # Upscale the image
+    result = sr.upsample(image)
+
+    # Save the image, overriding the original.
+    cv2.imwrite(imgLocation, result)
 
 
 
@@ -46,7 +88,7 @@ def ssVid(url, match):
         timeStamp = random.randrange(5,155) # use yt's timestamp url postfix from 5-155 seconds before even loading the page
         timeURL = url + '&t=' + str(timeStamp)
 
-        wait = WebDriverWait(driver, 10) # specify the timeout time for waiting for elements to load *NOTE this may need to change depending on the computer and if you are getting inconsitant results
+        wait = WebDriverWait(driver, 10) # specify the timeout time for waiting for elements to load *note this may need to change depending on the computer and if you are getting inconsitant results
         driver.get(timeURL) # load the video page
 
         try:
@@ -55,9 +97,11 @@ def ssVid(url, match):
 
             ActionChains(driver).move_to_element(wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, 'div.ytp-chrome-controls')))).perform() # wait until the toolbar is loaded
 
-            time.sleep(2) # *NOTE this may need to change depending on the computer and if you are getting inconsitant results
+            time.sleep(2) # *note this may need to change depending on the computer and if you are getting inconsitant results
 
             wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, 'button.ytp-fullscreen-button.ytp-button'))).click() # click the fullscreen button
+
+            time.sleep(0.5) # *note this may need to change depending on the computer and if you are getting inconsitant results
 
             wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '.ytp-settings-button'))) # wait until the settings button is visible
 
@@ -67,10 +111,10 @@ def ssVid(url, match):
 
             settings_menu.find_element(By.XPATH, '//div[contains(text(),"Quality")]').click() # click on the "quality" sub-menu
 
-            time.sleep(1) # *NOTE this may need to change depending on the computer and if you are getting inconsitant results
+            time.sleep(1) # *note this may need to change depending on the computer and if you are getting inconsitant results
 
             # try changing the video to the highest resolution, if resolution is below 480p it will skip the video:
-            qualityOptions = ["2160p", "2160p60p", "2160p50p", "1440p", "1440p60p", "1440p50p", "1080p", "1080p60p", "1080p50p", "720p", "720p60p", "720p50p", "480p"]
+            qualityOptions = ["2160p", "2160p60p", "2160p50p", "1440p", "1440p60p", "1440p50p", "1080p", "1080p60p", "1080p50p", "720p", "720p60p", "720p50p", "480p"] # tries setting the video to the highest resoltion, if below 480p skip.
             try:
                 for option in qualityOptions:
                     try:
@@ -85,11 +129,14 @@ def ssVid(url, match):
 
             time.sleep(5) # wait until video overlay disapears *NOTE this may need to change depending on the computer and if you are getting inconsitant results
 
-            #driver.save_screenshot(dir+'\\images\\'+str(match)+'.png') # save a screenshot of the current page to dir/images/match.png
+            driver.save_screenshot(dir+'\\images\\'+str(match)+'.png') # save a screenshot of the current page to dir/images/match.png
             
             print(f"Image saved to {dir}\images\{str(match)}.png") # print status
             global successIndex
             successIndex += 1 # iterate the counter of succesful images saved
+
+            if upscale2x == True:
+                superRes(f"{dir}\images\{str(match)}.png")
 
             assert 'Invalid video, skipping... ' not in driver.page_source # print if video is somehow invalid
             
