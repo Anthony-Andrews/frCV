@@ -254,12 +254,12 @@ if __name__ == "__main__":
     load_dotenv() # load API key
     apiKey = os.getenv('apiKey') # load API key pt.2
 
-    preLoad() # loads a sample video to avoid yt pop ups or inital slowdowns (this is a bad way of solving this problem)
+    #preLoad() # loads a sample video to avoid yt pop ups or inital slowdowns (this is a bad way of solving this problem)
 
     successIndex = 0  # number each image
 
-    getURL() # call the api function
-    driver.quit() # close the browser once script is done
+    #getURL() # call the api function
+    #driver.quit() # close the browser once script is done
 
     endTime = time.time() # calculate elapsed time
     elapsedTime = round(endTime - startTime, 2) 
