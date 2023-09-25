@@ -1,5 +1,5 @@
 # frCV
-FRC YOLO CV model
+FRC YOLO CV model - under construction...
 
 9/19/23: matchScrapper.py - Automated web-scraper for match images.
 
