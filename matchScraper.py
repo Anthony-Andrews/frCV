@@ -29,6 +29,8 @@ dir = os.path.dirname(os.path.abspath(__file__)) # get path of script.
 options = webdriver.FirefoxOptions() # specify options for the automated Firefox windows
 
 
+startTime = time.time() # start the timer
+
 # if running in headless mode, mute browser and set to headless mode
 if headless == True:
     print('Starting FRC match scraper... (headless mode)') # print status
@@ -129,14 +131,14 @@ def ssVid(url, match):
 
             time.sleep(5) # wait until video overlay disapears *NOTE this may need to change depending on the computer and if you are getting inconsitant results
 
-            driver.save_screenshot(dir+'\\images\\'+str(match)+'.png') # save a screenshot of the current page to dir/images/match.png
+            driver.save_screenshot(dir+'\\data\\'+str(match)+'.png') # save a screenshot of the current page to dir/data/match.png
             
-            print(f"Image saved to {dir}\images\{str(match)}.png") # print status
+            print(f"Image saved to {dir}\data\{str(match)}.png") # print status
             global successIndex
             successIndex += 1 # iterate the counter of succesful images saved
 
             if upscale2x == True:
-                superRes(f"{dir}\images\{str(match)}.png")
+                superRes(f"{dir}\data\{str(match)}.png")
 
             assert 'Invalid video, skipping... ' not in driver.page_source # print if video is somehow invalid
             
@@ -245,11 +247,10 @@ def preLoad():
 
 
 if __name__ == "__main__":
-    startTime = time.time()
 
-    if not os.path.exists(dir+'\\images\\'):
+    if not os.path.exists(dir+'\\data\\'):
     # Create the folder if it doesn't exist
-        os.makedirs(dir+'\\images\\')
+        os.makedirs(dir+'\\data\\')
 
     load_dotenv() # load API key
     apiKey = os.getenv('apiKey') # load API key pt.2
