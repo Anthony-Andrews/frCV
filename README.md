@@ -12,4 +12,4 @@ trainedModel.pt - finished trained model, trained on a 3090 under 1h
 
 # Shoutouts:
 thanks to Ethan Cui (OrcaShamu) for helping train, label, & reseach.
-also thanks to Rynamarole and sleep deprivation for labeling.
+also thanks to Rynamarole for labeling images and sleep deprivation.
