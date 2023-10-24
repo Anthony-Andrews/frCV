@@ -1,16 +1,15 @@
-https://youtu.be/aJATq20xSqo?si=AXednOlv7XHMHzQb
+# see https://youtu.be/aJATq20xSqo?si=AXednOlv7XHMHzQb for demo.
 
-# frCV
-FRC YOLO CV model - under construction...
+## FRC bot object detection model
 
-9/19/23: matchScrapper.py - Automated web-scraper for match images.
+bulkCropper - python bulk crop tool
 
-9/24/22: cropper - python bulk crop tool created & labelimg dataset annotation tool used. (roboflow messed up alot of data) two classes: 'BLU' & 'RED'
+labelImg - basic img labler used
 
-9/24/23: yolov8_custom_training.ipynb - intial tests with YOLOv8 model and small (45 ish) images were promising.
+yolov8_custom_training.ipynb -jupyter notebook colab for training
 
-9/25/23 training with 350 images.
+trainedModel.pt - finished trained model, trained on a 3090 under 1h
 
 # Shoutouts:
-thanks to Ethan Cui (OrcaShamu) for helping train, annotate, & reseach.
-also thanks to Rynamarole for annotation help. 
+thanks to Ethan Cui (OrcaShamu) for helping train, label, & reseach.
+also thanks to Rynamarole and sleep deprivation for labeling.
