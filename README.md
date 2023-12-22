@@ -1,4 +1,4 @@
-# see https://youtu.be/aJATq20xSqo?si=AXednOlv7XHMHzQb for demo.
+![](https://github.com/Anthony-Andrews/frCV/blob/main/DEMO_12fps640p.gif)
 
 ## FRC bot object detection model
 
