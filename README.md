@@ -6,6 +6,8 @@ demo: ≈300 images 0.3 confidence
 
 * runs off of yolov8, custom model coming eventually.
 
+* features basic super-resolution upscaling of base footage (not the best solution)
+
 * bulkCropper - python bulk crop tool
 
 * labelImg - basic img labler used
