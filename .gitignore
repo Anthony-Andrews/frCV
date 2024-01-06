@@ -1,3 +1,5 @@
 .env
 /images
 images.zip
+*.avi
+*.mp4

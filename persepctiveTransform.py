@@ -82,6 +82,10 @@ class VideoProcessor:
         self.rotation_entry.insert(0, str(self.rotation_angle))
         self.rotation_entry.grid(row=9, column=1, pady=5)
 
+        # Button for rotating overlay image by 180 degrees
+        rotate_overlay_button = Button(self.root, text="Rotate Overlay 180°", command=self.rotate_overlay_image_180)
+        rotate_overlay_button.grid(row=11, column=3, pady=5)
+
         # Create buttons for adjusting X and Y coordinates
         offset_label = Label(self.root, text="Offsets:")
         offset_label.grid(row=11, column=0, pady=1)
@@ -330,6 +334,15 @@ class VideoProcessor:
 
         except ValueError:
             print("Invalid coordinate value. Please enter valid floating-point numbers.")
+
+    def rotate_overlay_image_180(self):
+        self.overlay_image = cv2.rotate(self.overlay_image, cv2.ROTATE_180)
+
+        # If the video is not paused, update the transformation immediately
+        if self.cap is not None and not self.paused:
+            ret, frame = self.cap.read()
+            if ret:
+                self.display_transformed_frame(frame)
 
 # Create an instance of VideoProcessor
 video_processor = VideoProcessor()
